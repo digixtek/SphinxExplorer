@@ -39,7 +39,7 @@ function Main() {
           negative
           compact
           floating
-          header="Error Connecting to Substrate"
+          header="Error Connecting to Sphinx"
           content={`Connection to websocket '${errObj.target.url}' failed.`}
         />
       </Grid.Column>
@@ -47,7 +47,7 @@ function Main() {
   )
 
   if (apiState === 'ERROR') return message(apiError)
-  else if (apiState !== 'READY') return loader('Connecting to Substrate')
+  else if (apiState !== 'READY') return loader('Connecting to Sphinx')
 
   if (keyringState !== 'READY') {
     return loader(

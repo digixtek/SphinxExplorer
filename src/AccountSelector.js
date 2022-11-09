@@ -10,7 +10,7 @@ import {
   Image,
   Label,
 } from 'semantic-ui-react'
-
+ 
 import { useSubstrate, useSubstrateState } from './substrate-lib'
 
 const CHROME_EXT_URL =

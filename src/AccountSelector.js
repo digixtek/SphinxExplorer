@@ -53,18 +53,17 @@ function Main(props) {
     <Menu
       attached="top"
       tabular
+      className='bg-light-gray'
       style={{
-        backgroundColor: '#fff',
-        borderColor: '#fff',
         paddingTop: '1em',
-        paddingBottom: '1em',
+        paddingBottom: '1em', 
       }}
     >
       <Container>
         <Menu.Menu>
           <Image
-            src={`${process.env.PUBLIC_URL}/assets/sphinx-logo.png`}
-            size="mini"
+            src={`${process.env.PUBLIC_URL}/assets/sphinx-logo-white.png`}
+            className='header-image-logo'
           />
         </Menu.Menu>
         <Menu.Menu position="right" style={{ alignItems: 'center' }}>

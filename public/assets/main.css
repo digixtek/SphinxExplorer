@@ -1,8 +1,135 @@
-.github-fork-ribbon.right-bottom:before {
-  background-color: #666;
+:root {
+  --bs-font-sans-serif: system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    "Noto Sans",
+    "Liberation Sans",
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
 }
 
-.ui.statistic.block_number > .value {
-  font-size: 2.4rem !important;
-  line-height: 4rem !important;
+body,
+html {
+  margin: 0;
+  font-family: var(--bs-font-sans-serif) !important;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #a0a0a0 !important;
+  background-color: #1c1c1c !important;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.bg-light-gray {
+  background: #232323 !important;
+  border: 0px solid #232323 !important;
+}
+
+.header-image-logo {
+  width: 100px;
+}
+
+.box-shadow-none {
+  box-shadow: none !important;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.nav-masthead .active {
+  color: #fff !important;
+  border-bottom-color: #fff;
+}
+.nav-masthead .nav-link {
+  font-weight: 700;
+  color: rgba(255, 255, 255, .5);
+  background-color: transparent;
+  border-bottom: 0.25rem solid transparent;
+}
+
+.gradient-button {
+  background: -webkit-linear-gradient(315deg, blueviolet 25%, purple) !important;
+}
+
+.g-button {
+  font-size: 0.875rem;
+  -webkit-appearance: none;
+  display: inline-block;
+  padding: 17px 30px;
+  border: 0;
+  border-radius: 50px !important;
+  margin: 10px;
+  font-weight: 700;
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0;
+  margin-left: 0;
+  min-width: 120px;
+  padding: 17px 0;
+  text-align: center;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.text-gradient-pink-blue {
+  background: -webkit-linear-gradient(-70deg, #db469f, #2188ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--bs-font-sans-serif) !important;
+}
+
+.ui.card>.content>.header,
+.ui.statistic>.label,
+.ui.statistics .statistic>.label,
+.ui.statistic>.value,
+.ui.statistics .statistic>.value,
+.ui.card>.extra,
+.ui.cards>.card>.extra {
+  color: #fff !important;
+  font-family: var(--bs-font-sans-serif) !important;
+}
+
+.ui.statistic>.label, .ui.statistics .statistic>.label {
+  text-transform: none !important;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.ui.input>input {
+  
+  height: 50px;
+  color: #fff !important;
+  font-family: var(--bs-font-sans-serif) !important;
+  background: #232323 !important;
+  border-radius: 500rem;
+}
+
+.search .input {
+  width: 100% !important;
+  color: #fff !important;
 }

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Statistic, Grid, Card, Icon } from 'semantic-ui-react'
+import { Grid, Card, Icon } from 'semantic-ui-react'
 
 import { useSubstrateState } from './substrate-lib'
 
@@ -40,16 +40,19 @@ function Main(props) {
 
   return (
     <Grid.Column>
-      <Card>
-        <Card.Content textAlign="center">
-          <Statistic
-            className="block_number"
-            label={(finalized ? 'Finalized' : 'Current') + ' Block'}
-            value={blockNumber}
-          />
+      <Card className='bg-light-gray box-shadow-none '>
+        <Card.Content>
+          <Card.Header>{(finalized ? 'Finalized' : 'Current') + ' Block'}</Card.Header>
+          <Card.Meta className='mt-3'>
+            <div className='d-flex'>
+              <h1 className='text-white'>{blockNumber}</h1>
+            </div>
+
+          </Card.Meta>
         </Card.Content>
         <Card.Content extra>
-          <Icon name="time" /> {blockNumberTimer}
+          <span className='text-white'><span className='text-gradient-pink-bluex'><Icon name="time" /> {blockNumberTimer}</span></span>
+
         </Card.Content>
       </Card>
     </Grid.Column>

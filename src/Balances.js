@@ -39,7 +39,7 @@ export default function Main(props) {
           No accounts to be shown
         </Label>
       ) : (
-        <Table celled striped size="small">
+        <Table celled striped size="small" className='bg-light-gray box-shadow-none '>
           <Table.Body>
             <Table.Row>
               <Table.Cell width={3} textAlign="right">

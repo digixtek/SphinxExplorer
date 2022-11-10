@@ -21,7 +21,7 @@ function Main(props) {
 
   return (
     <Grid.Column>
-      <Card>
+      <Card className='bg-light-gray box-shadow-none '>
         <Card.Content>
           <Card.Header>Metadata</Card.Header>
           <Card.Meta>

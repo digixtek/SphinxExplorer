@@ -1908,7 +1908,7 @@
     "@polkadot/x-global" "8.7.1"
 
 "@polkadot/x-fetch@^8.7.1":
-  "integrity" "sha512-ygNparcalYFGbspXtdtZOHvNXZBkNgmNO+um9C0JYq74K5OY9/be93uyfJKJ8JcRJtOqBfVDsJpbiRkuJ1PRfg=="
+  "integrity" "sha512-ygNparcalYFGbSINXtdtZOHvNXZBkNgmNO+um9C0JYq74K5OY9/be93uyfJKJ8JcRJtOqBfVDsJpbiRkuJ1PRfg=="
   "resolved" "https://registry.npmjs.org/@polkadot/x-fetch/-/x-fetch-8.7.1.tgz"
   "version" "8.7.1"
   dependencies:
@@ -2101,7 +2101,7 @@
   "version" "5.4.0"
 
 "@svgr/babel-plugin-svg-em-dimensions@^5.4.0":
-  "integrity" "sha512-cPzDbDA5oT/sPXDCUYoVXEmm3VIoAWAPT6mSPTJNbQaBNUuEKVKyGH93oDY4e42PYHRW67N5alJx/eEol20abw=="
+  "integrity" "sha512-cPzDbDA5oT/SINXDCUYoVXEmm3VIoAWAPT6mSPTJNbQaBNUuEKVKyGH93oDY4e42PYHRW67N5alJx/eEol20abw=="
   "resolved" "https://registry.npmjs.org/@svgr/babel-plugin-svg-em-dimensions/-/babel-plugin-svg-em-dimensions-5.4.0.tgz"
   "version" "5.4.0"
 
@@ -8635,7 +8635,7 @@
     "warning" "^4.0.2"
 
 "react-refresh@^0.11.0", "react-refresh@>=0.10.0 <1.0.0":
-  "integrity" "sha512-F27qZr8uUqwhWZboondsPx8tnC3Ct3SxZA3V5WyEvujRyyNv0VYPhoBg1gZ8/MV5tubQp76Trw8lTv9hzRBa+A=="
+  "integrity" "sha512-F27qZr8uUqwhWZboondSINX8tnC3Ct3SxZA3V5WyEvujRyyNv0VYPhoBg1gZ8/MV5tubQp76Trw8lTv9hzRBa+A=="
   "resolved" "https://registry.npmjs.org/react-refresh/-/react-refresh-0.11.0.tgz"
   "version" "0.11.0"
 

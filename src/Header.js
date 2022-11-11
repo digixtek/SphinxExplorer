@@ -24,8 +24,8 @@ export default function Main(props) {
                 </Menu.Menu>
                 <Menu.Menu position="right" className="nav-masthead" style={{ alignItems: 'center' }}>
                     <a aria-current="page" href="/" className="nav-link active">Home</a>
-                    <a href="#" className="nav-link">Blocks</a>
-                    <a href="#" className="nav-link">Transactions</a>
+                    <a href="/blocks" className="nav-link">Blocks</a>
+                    <a href="/transactions" className="nav-link">Transactions</a>
                 </Menu.Menu>
             </Container>
         </Menu>

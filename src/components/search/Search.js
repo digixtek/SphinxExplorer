@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
-import { Grid, Search } from 'semantic-ui-react'
+import { Grid, Search, Container } from 'semantic-ui-react'
 
-import { useSubstrateState } from './substrate-lib'
+import { useSubstrateState } from '../../substrate-lib'
 
 function Main(props) {
     const { api } = useSubstrateState()
@@ -25,15 +25,18 @@ function Main(props) {
     }, [api.query.templateModule])
 
     return (
-        <Grid.Column>
+        <Container className='mt-50'>
+            <Grid.Column>
 
-            <Search className='box-shadow-none '
-                input={{ icon: 'search', iconPosition: 'left' }}
-                placeholder="Search for accounts, blocks, transactions, and tokens"
+                <Search className='box-shadow-none '
+                    input={{ icon: 'search', iconPosition: 'left' }}
+                    placeholder="Search for accounts, blocks, transactions, and tokens"
 
-            />
+                />
 
-        </Grid.Column>
+            </Grid.Column>
+        </Container>
+
     )
 }
 

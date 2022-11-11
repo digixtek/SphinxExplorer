@@ -1,6 +1,7 @@
 import React, { createRef } from 'react'
+import { BrowserRouter as Router, Route }
+  from 'react-router-dom';
 import {
-  Container,
   Dimmer,
   Loader,
   Grid,
@@ -12,19 +13,13 @@ import 'semantic-ui-css/semantic.min.css'
 import { SubstrateContextProvider, useSubstrateState } from './substrate-lib'
 import { DeveloperConsole } from './substrate-lib/components'
 
+import Search from './components/search/Search'
+
 import Header from './Header'
-//import AccountSelector from './AccountSelector'
-//import Balances from './Balances'
-import BlockNumber from './BlockNumber'
-//import Events from './Events'
-//import Interactor from './Interactor'
-//import Metadata from './Metadata'
-import NodeInfo from './NodeInfo'
-import Price from './Price'
-//import TemplateModule from './TemplateModule'
-//import Transfer from './Transfer'
-//import Upgrade from './Upgrade'
-import Search from './Search'
+import Index from './pages/index/Index';
+import Block from './pages/block/Index';
+import Transaction from './pages/transaction/Index';
+
 
 function Main() {
   const { apiState, apiError, keyringState } = useSubstrateState()
@@ -62,25 +57,21 @@ function Main() {
 
   return (
     <div ref={contextRef}>
-      
+
       <Sticky context={contextRef}>
-        <Header/>
+        <Header />
       </Sticky>
-      <Container className='mt-50'>
-        <Search />
-        <Container className='mt-50'>
-          <Grid stackable columns="equal">
-            <Grid.Row stretched>
-              <NodeInfo />
-              <Price />
-              <BlockNumber />
-              <BlockNumber finalized />
-            </Grid.Row>
+      <Search />
 
-          </Grid>
-        </Container>
-
-      </Container>
+      <Router>
+        <Route exact path='/' component={Index} />
+      </Router>
+      <Router>
+        <Route exact path='/blocks' component={Block} />
+      </Router>
+      <Router>
+        <Route exact path='/transactions' component={Transaction} />
+      </Router>
       <DeveloperConsole />
     </div>
   )
